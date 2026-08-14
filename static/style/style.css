@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+}
+#nav0 {
+    color: rgb(240, 255, 255);
+    margin-left: 50px;
+    text-decoration: none;
+}
+    #nav0:hover {
+        color: black;
+        background-color: #f0ffff;
+        padding: 10px;
+        border-radius: 25px;
+    }
+
+#joe {
+    width: 80px; 
+    height: 80px;
+    right: 20px;
+    padding: 25px;
+    margin-right: 3%;
+    margin-left: 3%;
+    border-radius: 70px;
+}
+
+nav1 {
+    margin-left: 100px;
+}
+    sub-nav1 {
+        margin-left: 20px;
+    }
+
+
+#beetwen {
+    display: flex;
+    align-items: center;
+
+}
+
+#wall {
+    width: 30%;
+    margin-left: 65%;
+    margin-top: 3%;
+}
