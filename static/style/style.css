@@ -1,19 +1,52 @@
 body {
     background-color: black;
 }
-#nav0 {
-    color: rgb(240, 255, 255);
-    margin-left: 50px;
+
+titulo {
+    font-size: 70px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+a {
     text-decoration: none;
 }
-    #nav0:hover {
+
+h1 {
+    color: #f0ffff;
+    font-family: monospace;
+    padding: 100px;
+    margin-bottom: 20%;
+}
+
+.black-red {
+    background: linear-gradient(to bottom, rgb(126, 0, 0), black);
+}
+
+#catalog {
+    color: #f0ffff;
+    transition-duration: 0.5s;
+}
+    #catalog:hover {
+        padding-left: 40px;
+        transition-duration: 0.6s;
+    }
+    
+#menu {
+    color: #f0ffff;
+    padding: 6px;
+    margin-left: 40px;
+}
+    #menu:hover {
         color: black;
         background-color: #f0ffff;
-        padding: 10px;
-        border-radius: 25px;
+        background-size: cover;
+        background-position: center -30px;
+        padding: 6px;
+        font-size: 16px;
+        transition: 0.5s;
     }
 
-#joe {
+#logo-kof {
     width: 80px; 
     height: 80px;
     right: 20px;
@@ -23,22 +56,42 @@ body {
     border-radius: 70px;
 }
 
+.photo {
+    width: 35%;
+    padding-left: 5px;
+    animation: mover 15s linear infinite alternate-reverse;
+    padding-bottom: 50%;
+}
+    @keyframes mover {
+    from {
+        transform: translateX(-230%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.carrossel {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    margin-top: -18%;
+}
+
 nav1 {
-    margin-left: 100px;
+    margin-left: 110px;
 }
     sub-nav1 {
-        margin-left: 20px;
+        margin-left: 25px;
     }
-
 
 #beetwen {
     display: flex;
     align-items: center;
-
 }
 
 #wall {
-    width: 30%;
-    margin-left: 65%;
-    margin-top: 3%;
+    width: 25%;
+    margin-left: 40%;
+    margin-bottom: 17%;
 }
