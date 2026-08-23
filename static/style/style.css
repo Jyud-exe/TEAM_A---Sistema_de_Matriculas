@@ -1,25 +1,46 @@
 body {
     background-color: black;
+    max-width: 100%;
 }
 
-titulo {
-    font-size: 70px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+i {
+    color: #f0ffff;
 }
 
 a {
     text-decoration: none;
 }
 
+.black-red {
+    background: linear-gradient(to bottom, rgb(126, 0, 0), black);
+}
+
+.div {
+    margin-bottom: 150px;
+}
+titulo {
+    color: black;
+    font-size: 70px;
+    white-space: nowrap;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    
+}
+
+titulo1 {
+    color: #f0ffff;
+    display: flex;
+    font-size: 39px;
+    padding-top: 15%;
+    white-space: nowrap;
+    margin-bottom: 10%;
+    }
+
 h1 {
     color: #f0ffff;
     font-family: monospace;
     padding: 100px;
     margin-bottom: 20%;
-}
-
-.black-red {
-    background: linear-gradient(to bottom, rgb(126, 0, 0), black);
+    padding-right: 30px;
 }
 
 #catalog {
@@ -35,6 +56,7 @@ h1 {
     color: #f0ffff;
     padding: 6px;
     margin-left: 40px;
+    border-radius: 20px;
 }
     #menu:hover {
         color: black;
@@ -42,8 +64,8 @@ h1 {
         background-size: cover;
         background-position: center -30px;
         padding: 6px;
-        font-size: 16px;
-        transition: 0.5s;
+        font-size: 17px;
+        transition: 0.3s;
     }
 
 #logo-kof {
@@ -59,12 +81,11 @@ h1 {
 .photo {
     width: 35%;
     padding-left: 5px;
-    animation: mover 15s linear infinite alternate-reverse;
-    padding-bottom: 50%;
+    animation: mover 25s linear infinite alternate-reverse;
 }
     @keyframes mover {
     from {
-        transform: translateX(-230%);
+        transform: translateX(-220%);
     }
     to {
         transform: translateX(0);
@@ -75,7 +96,7 @@ h1 {
     display: flex;
     width: 100%;
     overflow: hidden;
-    margin-top: -18%;
+    margin-top: -15%;
 }
 
 nav1 {
@@ -88,10 +109,38 @@ nav1 {
 #beetwen {
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 #wall {
-    width: 25%;
-    margin-left: 40%;
+    width: 27%;
+    margin-left: 15%;
+    padding-right: 5%;
     margin-bottom: 17%;
+} 
+
+#persona-1{
+    width: 30%;
+    position: absolute;
+    right: 0;
+}
+
+desc-1 {
+    color: #f0ffff;
+    font-size: 30px;
+}
+
+#persona-2{
+    width: 50%;
+    position: relative;
+    right: 0;
+}
+
+desc-2{
+    color: #f0ffff;
+    font-size: 30px;
+    text-align: right;
+    margin-right: 15px;
+    position: absolute;
+    right: 0;
 }
