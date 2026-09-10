@@ -1,6 +1,8 @@
 html, body {
     background-color: black;
     max-width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 i {
@@ -9,15 +11,15 @@ i {
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .center {
     justify-content: center;
 }
 
-.div {
-    margin-bottom: 150px;
+br {
+    margin-bottom: 200px;
 }
 titulo {
     color: black;
@@ -42,6 +44,7 @@ h1 {
     padding: 100px;
     margin-bottom: 20%;
     padding-right: 30px;
+    padding-top: 10%;
 }
 
 #catalog {
@@ -60,6 +63,7 @@ h1 {
     background-color: white;
     border: 1px solid white;
     padding: 9px;
+    padding-inline: 30px;
     margin-left: 20px;
     border-radius: 20px;
     transition: 0.5s;
@@ -73,8 +77,8 @@ h1 {
 
 /* LOGO */
 #logo-kof {
-    width: 80px; 
-    height: 80px;
+    width: 70px; 
+    height: 70px;
     right: 20px;
     padding: 25px;
     margin-right: 3%;
@@ -116,7 +120,7 @@ h1 {
     width: 27%;
     margin-left: 15%;
     padding-right: 5%;
-    margin-bottom: 17%;
+    margin-bottom: 15%;
 } 
 
 /* CARD */
@@ -146,8 +150,8 @@ h1 {
 button {
     font-size: 18px;
     border-radius: 10px;
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: black;
     transition: 0.3s;
     border: 2PX solid black;
 }
