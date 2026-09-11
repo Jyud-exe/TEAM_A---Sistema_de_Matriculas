@@ -47,6 +47,10 @@ h1 {
     padding-top: 10%;
 }
 
+h3 {
+    color:dimgray;
+}
+
 #catalog {
     color: #fcfcfc;
     transition-duration: 0.4s;
@@ -66,12 +70,13 @@ h1 {
     padding-inline: 30px;
     margin-left: 20px;
     border-radius: 20px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
     .button0:hover {
         color: white;
         background-color: black;
         border: 1px solid white;
+        box-shadow: 0px 0px 10px 0px white;
         transition: 0.5s;
     }
 
@@ -147,7 +152,7 @@ h1 {
 }
 
 /* BOTÃO DO CARD */
-button {
+#button1 {
     font-size: 18px;
     border-radius: 10px;
     color: white;
@@ -155,7 +160,7 @@ button {
     transition: 0.3s;
     border: 2PX solid black;
 }
-    button:hover {
+    #button1:hover {
         box-shadow: 5px 5px 10px 2px black;
         padding-left: 12px;
         padding-right: 12px;
@@ -169,7 +174,7 @@ button {
     display: flex;
     justify-content: space-between;
     padding: 5%;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .rodape-1 {
@@ -191,7 +196,7 @@ button {
     transition-duration: 1.0s;
 }
 
-/* Sessão de Login */
+/* SESSÃO DE LOGIN */
 #login {
     display: none;
 }
@@ -216,4 +221,24 @@ input {
     border-radius: 10px;
     border: 2px solid black;
     font-size: 15px;
+}
+
+/* PAGINA "UNIDADE" */
+
+#img0 {
+    width: 320px;
+    border-radius: 40px 10px;
+}
+
+card0 {
+    width: 100%;
+    margin: 5%;
+    color: white;
+    border: 1px solid black;
+    border-radius: 40px 10px;
+}
+card0:hover {
+    border: 1px solid white;
+    border-radius: 40px 10px;
+    box-shadow: 0px 0px 10px 0px white;
 }
