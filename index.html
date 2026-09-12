@@ -7,18 +7,21 @@
     <link rel="stylesheet" href="static/style/style.css">
 </head>
 <body>
-
-    <div id="beetwen" style="position: fixed; background-color: black;">
-        <img src="static/img/menu-burger (1).png" alt="" style="padding-left: 20px; width: 40px;">
+     <div id="beetwen" style="position: fixed; background-color: black;">
+        <img src="static/icons/menu-burger (1).png" alt="" style="padding-left: 20px; width: 40px;">
         <a href="index.html"><img src="static/img/logo-kof-97.jpg" id="logo-kof"></a>
 
         <div style="margin-left: auto; padding-right: 20px; font-size: 16px;">
-            <a class="button0" >Contato</a>
+            <a id="btncontato" class="button0" href="#">Contato</a>
+            <div id="contato">
+                <h3><a href="#">Whatsapp</a></h3>
+                <h3><a href="#">G-mail</a></h3>
+            </div>
 
             <a class="button0" id="btnlogin" href="#">Sou aluno</a>
             <div id="login">
                 <div id="beetwen">
-                    <h2>Login</h2><h2 id="cancel" style="padding-left: 70%; margin-top: -16%;"><img src="static/img/cross.png" alt=""></h2>
+                    <h2>Área do Aluno</h2>
                 </div>
                 <form action="" method="post">
                     CPF: <input type="text"><p>
@@ -31,6 +34,7 @@
         </div>
     </div>
     <br><br>
+
     <div id="beetwen" style="background: linear-gradient(to bottom, rgb(126, 0, 0), black);">
             <h1>
                 <titulo>MARQUE SUA AULA</titulo>
@@ -136,27 +140,28 @@
 
     <div class="rodape-1">
         <img src="static/img/KOFlogo.png" alt="" style="width: 150px;">
-        <a style="padding-left: 75%;" href="#"><img src="static/img/instagram.png" ></a>
-                                    <a href="#"><img src="static/img/tik-tok.png" ></a>
-                                    <a href="#"><img src="static/img/whatsapp.png" ></a>
-
+        <a style="padding-left: 75%;" href="#"><img src="static/icons/instagram.png" ></a>
+                                    <a href="#"><img src="static/icons/tik-tok.png" ></a>
+                                    <a href="#"><img src="static/icons/whatsapp.png" ></a>
     </div>
 
 <script>
     window.addEventListener('load', () => {
         document.getElementById('transicao').classList.add('trans-left');
-    })
+    });
 </script>
 
 <script>
     document.getElementById('btnlogin').addEventListener('click', () => {
-        document.getElementById('login').classList.add('loginon');
-
-        document.getElementById('cancel').addEventListener('click', () => {
-        document.getElementById('login').classList.remove('loginon');
-    })
+        document.getElementById('login').classList.toggle('loginon');
     });
+</script>
     
+<script>
+    document.getElementById('btncontato').addEventListener('click', () => {
+        document.getElementById('contato').classList.toggle('contatoon');
+    });
+
 </script>
 
 </body>

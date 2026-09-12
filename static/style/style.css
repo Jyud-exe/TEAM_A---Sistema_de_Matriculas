@@ -76,7 +76,6 @@ h3 {
         color: white;
         background-color: black;
         border: 1px solid white;
-        box-shadow: 0px 0px 10px 0px white;
         transition: 0.5s;
     }
 
@@ -205,14 +204,14 @@ h3 {
     background-color: rgb(126, 0, 0);
     width: 250px;
     display: block;
-    justify-content: center;
     align-items: center;
     border-radius: 15px;
     border: 2px solid black;
-    box-shadow: 0px 0px 12px 7px black;
+    box-shadow: 0px 0px 10px 0px black;
     margin-top: 3%;
-    padding: 2%;
+    padding: 1%;
     padding-top: -10%;
+    white-space: nowrap;
     position: absolute;
 }
 
@@ -220,7 +219,7 @@ h3 {
 input {
     border-radius: 10px;
     border: 2px solid black;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 /* PAGINA "UNIDADE" */
@@ -230,6 +229,7 @@ input {
     border-radius: 40px 10px;
 }
 
+/* CARTÃO DAS UNIDADES */
 card0 {
     width: 100%;
     margin: 5%;
@@ -241,4 +241,21 @@ card0:hover {
     border: 1px solid white;
     border-radius: 40px 10px;
     box-shadow: 0px 0px 10px 0px white;
+}
+
+/* OPÇÃO DE CONTATO */
+#contato {
+    display: none;
+}
+#contato.contatoon {
+    display: block;
+    color: white;
+    background-color: rgb(126, 0, 0);
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px 0px black;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 1%;
+    position: absolute;
 }
