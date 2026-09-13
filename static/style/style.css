@@ -5,17 +5,21 @@ html, body {
     padding: 0;
 }
 
-i {
+navbar {
+    position: fixed;
+    background-color: black;
+    box-shadow: 0px 0px 10px 0px white;
+    padding: 1%;
+}
+
+initial {
+    background: linear-gradient(to bottom, rgb(126, 0, 0), black);
+    margin-top: 1%;
+}
+
+i, a {
     color: #fcfcfc;
-}
-
-a {
     text-decoration: none;
-    color: white;
-}
-
-.center {
-    justify-content: center;
 }
 
 br {
@@ -31,6 +35,7 @@ titulo {
 titulo1 {
     color: #fcfcfc;
     display: flex;
+    justify-content: center;
     font-size: 39px;
     padding-top: 15%;
     white-space: nowrap;
@@ -39,16 +44,15 @@ titulo1 {
     }
 
 h1 {
-    color: #fcfcfc;
+    color: goldenrod;
     font-family: monospace;
     padding: 100px;
-    margin-bottom: 20%;
-    padding-right: 30px;
     padding-top: 10%;
+    padding-bottom: 20px;
 }
 
-h3 {
-    color:dimgray;
+h3, h5 {
+    color: dimgrey;
 }
 
 #catalog {
@@ -56,7 +60,6 @@ h3 {
     transition-duration: 0.4s;
 }
     #catalog:hover {
-        color: black;
         padding-left: 40px;
         transition-duration: 0.5s;
     }
@@ -90,26 +93,16 @@ h3 {
     border-radius: 70px;
 }
 
-/* CARROSSEL */
-.photo {
-    width: 35%;
-    padding-left: 5px;
-    animation: mover 25s linear infinite alternate-reverse;
-}
-    @keyframes mover {
-    from {
-        transform: translateX(-220%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-
-.carrossel {
+info {
+    color: white;
+    font-size: 30px;
     display: flex;
-    width: 100%;
-    overflow: hidden;
-    margin-top: -15%;
+    justify-content: space-between;
+    justify-content: center;
+    padding-top: 10%;
+    text-align: center;
+    line-height: 0;
+    margin: auto;
 }
 
 /* ELEMENTOS ALINHADOS */
@@ -117,6 +110,7 @@ h3 {
     display: flex;
     align-items: center;
     width: 100%;
+    justify-content: center;
 }
 
 /* PNG PRINCIPAL */
@@ -124,7 +118,7 @@ h3 {
     width: 27%;
     margin-left: 15%;
     padding-right: 5%;
-    margin-bottom: 15%;
+    padding-top: 5%;
 } 
 
 /* CARD */
@@ -172,7 +166,7 @@ h3 {
     background-color: rgb(48, 48, 48);
     display: flex;
     justify-content: space-between;
-    padding: 5%;
+    padding: 3%;
     margin-top: 100px;
 }
 
@@ -206,9 +200,10 @@ h3 {
     display: block;
     align-items: center;
     border-radius: 15px;
-    border: 2px solid black;
+    border: 1px solid black;
     box-shadow: 0px 0px 10px 0px black;
-    margin-top: 3%;
+    margin-top: 1%;
+    margin-left: 5%;
     padding: 1%;
     padding-top: -10%;
     white-space: nowrap;
