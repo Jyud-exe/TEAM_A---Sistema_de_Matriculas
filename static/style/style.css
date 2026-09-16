@@ -280,3 +280,23 @@ descricao {
         padding-right: 3%;
         transition: 0.2s;
     }
+
+professores {
+    color: black;
+    margin: auto;
+    padding: auto;
+}
+#prof {
+    width: 90%;
+    margin-bottom: 10%;
+    background-color: aliceblue;
+    border-radius: 25px 20px 0px 0px;
+    display: flex;
+    padding: auto;
+    margin: 5%;
+    transition: 0.3s;
+}
+    #prof:hover {
+        box-shadow: 0px 0px 10px 0px white;
+        transition: 0.2s;
+    }
