@@ -15,6 +15,7 @@ navbar {
 initial {
     background: linear-gradient(to bottom, rgb(126, 0, 0), black);
     margin-top: 1%;
+    margin-bottom: 10%;
 }
 
 i, a {
@@ -37,9 +38,9 @@ titulo1 {
     display: flex;
     justify-content: center;
     font-size: 39px;
-    padding-top: 15%;
     white-space: nowrap;
     margin-bottom: 10%;
+    margin-top: 10%;
     max-width: 100%;
     }
 
@@ -99,10 +100,11 @@ info {
     display: flex;
     justify-content: space-between;
     justify-content: center;
-    padding-top: 10%;
+    padding-top: 5%;
     text-align: center;
     line-height: 0;
     margin: auto;
+    margin-bottom: 10%;
 }
 
 /* ELEMENTOS ALINHADOS */
@@ -254,3 +256,27 @@ card0:hover {
     margin-top: 1%;
     position: absolute;
 }
+
+descricao {
+   text-align: center;
+   color: white;
+   margin: auto;
+   padding: auto;
+}
+
+#button2 {
+    padding: auto;
+    background-color: goldenrod;
+    font-size: 20px;
+    border: none;
+    border-radius: 35px;
+    margin-top: 5%;
+    padding: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transition: 0.3s;
+}
+    #button2:hover {
+        padding-left: 3%;
+        padding-right: 3%;
+        transition: 0.2s;
+    }
