@@ -13,12 +13,15 @@ navbar {
 }
 
 initial {
-    background: linear-gradient(to bottom, rgb(126, 0, 0), black);
-    margin-top: 1%;
+    display: block;
+    width: 100%;
+    background-image: url("../img/fundo-cen.jpg");
+    background-size: cover;
+    margin-top: 5%;
     margin-bottom: 10%;
 }
 
-i, a {
+a {
     color: #fcfcfc;
     text-decoration: none;
 }
@@ -26,6 +29,11 @@ i, a {
 br {
     margin-bottom: 200px;
 }
+
+golden {
+    color: goldenrod;
+}
+
 titulo {
     color: black;
     font-size: 70px;
@@ -34,6 +42,7 @@ titulo {
 }
 
 titulo1 {
+    background: linear-gradient(black, rgb(126, 0, 0), black);
     color: #fcfcfc;
     display: flex;
     justify-content: center;
@@ -48,8 +57,8 @@ h1 {
     color: goldenrod;
     font-family: monospace;
     padding: 100px;
-    padding-top: 10%;
-    padding-bottom: 20px;
+    padding-top: 8%;
+    margin-bottom: 10%;
 }
 
 h3, h5 {
@@ -115,14 +124,6 @@ info {
     justify-content: center;
 }
 
-/* PNG PRINCIPAL */
-#wall {
-    width: 27%;
-    margin-left: 15%;
-    padding-right: 5%;
-    padding-top: 5%;
-} 
-
 /* CARD */
 .cartao {
     background-color: #fcfcfc;
@@ -181,6 +182,7 @@ info {
 
 /* TRANSIÇÃO "EXPERIMENTAL" */ 
 #transicao {
+    color: white;
     padding-left: 70px;
     opacity: 0;
     transition-duration: 1.0s;
@@ -281,6 +283,7 @@ descricao {
         transition: 0.2s;
     }
 
+/* FEEDBACK DOS MESTRES */
 professores {
     color: black;
     margin: auto;
@@ -294,9 +297,27 @@ professores {
     display: flex;
     padding: auto;
     margin: 5%;
-    transition: 0.3s;
+    transition: 0.1s;
 }
     #prof:hover {
         box-shadow: 0px 0px 10px 0px white;
         transition: 0.2s;
     }
+
+#img-mestre {
+    width: 330px;
+    border-radius: 20px 20px 0px 0px;
+    margin-right: 2%;
+}
+
+tabela {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(48, 48, 48);
+    padding: 2%;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 2%;
+    padding-left: 8%;
+    padding-right: 8%;
+}
