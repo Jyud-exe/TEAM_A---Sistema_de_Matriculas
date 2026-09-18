@@ -15,7 +15,7 @@ navbar {
 initial {
     display: block;
     width: 100%;
-    background-image: url("../img/fundo-cen.jpg");
+    background-image: url("../img/wallpaperKOF.png");
     background-size: cover;
     margin-top: 5%;
     margin-bottom: 10%;
@@ -35,7 +35,8 @@ golden {
 }
 
 titulo {
-    color: black;
+    color: rgb(126, 0, 0);
+    text-decoration: 1px solid white;
     font-size: 70px;
     white-space: nowrap;
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
@@ -89,7 +90,7 @@ h3, h5 {
         color: white;
         background-color: black;
         border: 1px solid white;
-        transition: 0.5s;
+        transition: 0.2s;
     }
 
 /* LOGO */
@@ -153,14 +154,14 @@ info {
     border-radius: 10px;
     color: white;
     background-color: black;
-    transition: 0.3s;
+    transition: 0.2s;
     border: 2PX solid black;
 }
     #button1:hover {
         box-shadow: 5px 5px 10px 2px black;
         padding-left: 12px;
         padding-right: 12px;
-        transition: 0.3s;
+        transition: 0.1s;
     }
 
 /* RODAPÉ */
@@ -267,12 +268,11 @@ descricao {
 }
 
 #button2 {
-    padding: auto;
     background-color: goldenrod;
     font-size: 20px;
     border: none;
     border-radius: 35px;
-    margin-top: 5%;
+    margin-top: 1%;
     padding: 10px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     transition: 0.3s;
