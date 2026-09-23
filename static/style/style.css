@@ -1,6 +1,7 @@
 html, body {
     background-color: black;
     max-width: 100%;
+    min-width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -8,7 +9,7 @@ html, body {
 navbar {
     position: fixed;
     background-color: black;
-    box-shadow: 0px 0px 10px 0px white;
+    box-shadow: 0px 0px 5px 0px white;
     padding: 1%;
 }
 
@@ -143,7 +144,7 @@ info {
 
 .conteudo {
     color: black;
-    width: 100%;
+    max-width: 100%;
     font-size: 20px;
     text-align: center;
 }
@@ -175,7 +176,7 @@ info {
 }
 
 .rodape-1 {
-    width: 95%;
+    max-width: 95%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -217,10 +218,17 @@ info {
 
 /* Input */
 input {
-    border-radius: 10px;
-    border: 2px solid black;
+    border-radius: 15px;
+    border: none;
     font-size: 14px;
+    transition: 0.3s;
+    padding: 1%;
+    
 }
+    input:hover {
+        box-shadow: 0px 0px 10px 0px black;
+        transition: 0.2s;
+    }
 
 /* PAGINA "UNIDADE" */
 
@@ -231,7 +239,7 @@ input {
 
 /* CARTÃO DAS UNIDADES */
 card0 {
-    width: 100%;
+    max-width: 100%;
     margin: 5%;
     color: white;
     border: 1px solid black;
@@ -290,7 +298,7 @@ professores {
     padding: auto;
 }
 #prof {
-    width: 90%;
+    max-width: 90%;
     margin-bottom: 10%;
     background-color: aliceblue;
     border-radius: 25px 20px 0px 0px;
@@ -301,11 +309,11 @@ professores {
 }
     #prof:hover {
         box-shadow: 0px 0px 10px 0px white;
-        transition: 0.2s;
+        transition: 0s;
     }
 
 #img-mestre {
-    width: 330px;
+    max-width: 330px;
     border-radius: 20px 20px 0px 0px;
     margin-right: 2%;
 }
@@ -320,4 +328,29 @@ tabela {
     margin-bottom: 2%;
     padding-left: 8%;
     padding-right: 8%;
+}
+
+#matricula {
+    display: none;
+}
+    #matricula.matriculaon {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        display: block;
+        color: white;
+        background-color: rgb(126, 0, 0);
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 0px white;
+        font-size: 25px;
+        padding-right: 40px;
+        padding-left: 40px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+select {
+    border: none;
+    font-size: 15px;
+    border-radius: 15px;
 }
