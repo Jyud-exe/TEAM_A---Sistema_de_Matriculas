@@ -7,34 +7,10 @@
     <title>Unidades</title>
 </head>
 <body>
-    <navbar id="beetwen">
-        <img src="static/icons/menu-burger (1).png" alt="" style="padding-left: 20px; width: 40px;">
-        <a href="index.html"><img src="static/img/KOFlogo.png" style="width: 130px; padding-left: 30px;"></a>
-
-        <div style="margin-left: auto; padding-right: 20px; font-size: 16px;">
-            <a id="btncontato" class="button0" href="#">Contato</a>
-            <div id="contato">
-                <h3><a href="#">Whatsapp</a></h3>
-                <h3><a href="#">G-mail</a></h3>
-            </div>
-
-            <a class="button0" id="btnlogin" href="#">Sou aluno</a>
-            <div id="login">
-                <div id="beetwen">
-                    <h2>Área do Aluno</h2>
-                </div>
-                <form action="" method="post">
-                    CPF: <input type="text"><p>
-                    Senha: <input type="password">
-                    <p style="padding-left: 65%;"><button id="button1" type="submit">Acessar</button></p>
-                </form>
-            </div>
-            <a class="button0" href="unidades.html">Matricule-se</a>
-        </div>
-    </navbar>
+    <div id="navbar"></div>
 
     <div>
-        <img src="static/img/wallpaperKOF0.jpg" alt="" style="width: 100%; margin-top: 7%;">
+        <img src="static/img/wallpaperKOF0.png" alt="" style="width: 100%; margin-top: 7%;">
     </div>
 
     <div id="beetwen" class="center" style="margin-top: 5%;">
@@ -117,79 +93,29 @@
         </card0>
     </div>
 
-    <div id="matricula">
-        <form action="" method="post">
-            <p>Nome: <input type="text" name="nome" id="">
-            <p>CPF: <input type="text" name="cpf" id="">
-            <p>Modalidade: <select name="" id="">
-                <option value="capoeira">Capoeira</option>
-                <option value="miu-Jutsu">Jiu-Jutsu</option>
-                <option value="muay-Thai">Muay-Thai</option>
-                <option value="karate">Karatê</option>
-                <option value="judo">Judô</option>
-            </select>
-            <p>Plano: <select name="" id="">
-                <option value="">+3</option>
-                <option value="">+10</option>
-                <option value="">+17</option>
-                <option value="">Familia</option>
-            </select>
-            <p><div style="text-align: center;">
-                <button type="submit" id="button2">Matricule-se</button>
-            </div></p>
-            
-        </form>
-    </div>
-
-    <div class="rodape">
-        <div>
-            <h2>Inicio</h2>
-            <a href="#">▸ Home</a> 
-            <p><a href="#">▸ Compras</a>
-            <p><a href="#">▸ Matriculas</a></p>
-        </div>
-        <div>
-            <h2>Sobre Nós</h2>
-            <a href="#">▸ Informações da Empresa</a>
-            <p><a href="#">▸ Contato</a>
-            <p><a href="#">▸ Blog</a></p>
-        </div>
-        <div>
-            <h2>Contatos</h2>
-            <a href="#">▸ FACS</a>
-            <p><a href="#">▸ Telefones</a>
-            <p><a href="#">▸ Chat</a></p>
-        </div>
-        <div>
-            <h2>Informações</h2>
-            ▸ Condicionamento físico
-            <p>▸ Foco e disciplina
-            <p>▸ Força e resistência
-            <p>▸ Defesa pessoal
-            <p>▸ Comunidade</p>
-        </div>
-    </div>
-
-    <div class="rodape-1">
-        <img src="static/img/KOFlogo.png" alt="" style="width: 120px;">
-        <a style="padding-left: 75%;" href="#"><img src="static/icons/instagram.png" ></a>
-                                    <a href="#"><img src="static/icons/tik-tok.png" ></a>
-                                    <a href="#"><img src="static/icons/whatsapp.png" ></a>
-
-    </div>
+    <div id="rodape"></div>
 
 <script>
-    document.getElementById('btnlogin').addEventListener('click', () => {
-        document.getElementById('login').classList.toggle('loginon');
-
+    fetch("componentes/rodape.html")
+    .then(resposta => resposta.text())
+    .then(dados => {
+        document.getElementById("rodape").innerHTML = dados;
     });
+    
+    fetch("componentes/navbar.html")
+    .then(resposta => resposta.text())
+    .then(dados => {
+        document.getElementById("navbar").innerHTML = dados;
 
-    document.getElementById('btncontato').addEventListener('click', () => {
-        document.getElementById('contato').classList.toggle('contatoon');
-    })
-    document.getElementById('btnmatricula').addEventListener('click', () => {
-        document.getElementById('matricula').classList.toggle('matriculaon')
-    })
+        document.getElementById('btnlogin').addEventListener('click', () => {
+            document.getElementById('login').classList.toggle('loginon');
+        });
+
+        document.getElementById('btncontato').addEventListener('click', () => {
+            document.getElementById('contato').classList.toggle('contatoon');
+        });
+    });
+    
 </script>
     
 </body>
